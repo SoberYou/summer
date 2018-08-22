@@ -1,4 +1,4 @@
-package com.cq.summer.annotation;
+package com.cq.summer.datasource;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 

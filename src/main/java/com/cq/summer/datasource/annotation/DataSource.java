@@ -1,4 +1,4 @@
-package com.cq.summer.annotation;
+package com.cq.summer.datasource.annotation;
 
 import java.lang.annotation.*;
 

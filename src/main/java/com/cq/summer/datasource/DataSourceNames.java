@@ -1,4 +1,4 @@
-package com.cq.summer.config;
+package com.cq.summer.datasource;
 
 public interface DataSourceNames {
     String APPLE = "apple";
