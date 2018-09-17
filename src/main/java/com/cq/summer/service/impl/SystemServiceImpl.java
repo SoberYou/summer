@@ -1,5 +1,6 @@
 package com.cq.summer.service.impl;
 
+import com.cq.summer.config.RedisClient;
 import com.cq.summer.dao.SystemDao;
 import com.cq.summer.service.SystemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +8,9 @@ import org.springframework.stereotype.Service;
 
 @Service("systemServic")
 public class SystemServiceImpl implements SystemService{
+
+    @Autowired
+    private RedisClient redisClient;
 
     @Autowired
     private SystemDao systemDao;
@@ -26,4 +30,8 @@ public class SystemServiceImpl implements SystemService{
         return systemDao.test2();
     }
 
+    @Override
+    public void test3(){
+        redisClient.addHash("summer", "apple", "sweet");
+    }
 }

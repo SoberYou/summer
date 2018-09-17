@@ -23,4 +23,9 @@ public class SystemController {
     public String test2(){
         return systemService.test2();
     }
+
+    @RequestMapping("test3")
+    public void test3(){
+        systemService.test3();
+    }
 }
