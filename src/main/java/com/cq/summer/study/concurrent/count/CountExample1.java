@@ -13,8 +13,6 @@ import java.util.concurrent.Semaphore;
 @Slf4j
 public class CountExample1 {
 
-    private static final Logger log = LoggerFactory.getLogger(CountExample1.class);
-
     //请求总数
     public static int clientTotal = 5000;
 
