@@ -17,8 +17,8 @@ import java.util.UUID;
 import org.apache.commons.net.ftp.FTP;
 
 import org.apache.commons.net.ftp.FTPClient;
+import org.springframework.web.multipart.MultipartFile;
 
- 
 
 public class FtpUtil {
 
@@ -90,7 +90,10 @@ public class FtpUtil {
 
     public static void main(String[] args) throws SocketException, IOException {
 
+
         InputStream inputStream = new FileInputStream("F:/sandro/2020-08-01～2020-08-07.txt");
+
+
 
         String remoteFilename = upload("192.168.0.60", "summer", "summer123", "/home/summer/cq/test", ".txt", inputStream);
 
